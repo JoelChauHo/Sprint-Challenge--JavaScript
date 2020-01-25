@@ -147,12 +147,14 @@ console.log(displayNames); //origin
 
 /* Request 2: .map()
 
-The zoos need a list of all their animal's names (animal_name only) converted to lower case. Using map, create a new array of strings named lowCaseAnimalNames, each string following this pattern: "jackal, asiatic". Log the resut.
+The zoos need a list of all their animal's names (animal_name only) converted to lower case. 
+Using map, create a new array of strings named lowCaseAnimalNames, 
+each string following this pattern: "jackal, asiatic". Log the resut.
 
 */
 
-const lowCaseAnimalNames = [];
-console.log(lowCaseAnimalNames);
+const lowCaseAnimalNames = []; //origin
+console.log(lowCaseAnimalNames); //origin
 
 /* Request 3: .filter() 
 
