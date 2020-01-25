@@ -29,14 +29,38 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your team lead
 
 1. Describe the biggest difference between `.forEach` & `.map`.
+  +The returning value
+  a)forEach() method receives a function as an argument and executes it once for each array element, but return undefined that means we have to define 
+  b)map method receives a function as a parameter. Then it applies it on each element and returns an entirely new array populated with    the results of calling the provided function.
+  +Ability to chain other methods
+  b)  map() is chainable. This means that you can attach reduce(), sort(), filter() and so on after performing a map() method on an array.
+  +immutability
+  The map() method returns an entirely new array with transformed elements and the same amount of data. In the case of forEach(), even if it returns undefined, it will mutate the original array with the callback.
+  
 
 2. What is the difference between a function and a method?
+  + Functions and methods are the same in JavaScript, but furthermore method is a function that belongs to a class. In JavaScript, a method is a function that belongs to an object.
 
 3. What is closure?
+  + A closure is the combination of a function bundled together (enclosed) with references to its surrounding state (the lexical environment). In other words, a closure gives you access to an outer function’s scope from an inner function. In JavaScript, closures are created every time a function is created, at function creation time
 
 4. Describe the four rules of the 'this' keyword.
+  ++The value of this differs depending on how a function is invoked (the call site), so we can’t know the value of this just by looking at the function itself, but we need to know the context in which the function is invoked.
+  a) Simple Function Call
+  this is the global object in non-strict mode, and undefined in strict mode.In the case of a simple function call, in non-strict mode this will default to the global object:
+  b) New Binding
+  Using the new keyword constructs a new object, and this points it.
+  When a function is invoked as a constructor function using the new keyword, this points to the new object that’s created:
+  c) Explicit Binding
+  We can explicitly tell the JavaScript engine to set this to point to a certain value using call, apply or bind.
+  call and apply can be used to invoke a function with a specific value for this:
+  d) Implicit Binding
+  this points to the object on which the function is called (what’s to the left of the period when the function is called).
+  This rule will apply for the majority of cases in your day-to-day code and applies when calling a method on an object:
+
 
 5. Why do we need super() in an extended class?
+  The super keyword is used to access and call functions on an object's parent. When used in a constructor, the super keyword appears alone and must be used before the this keyword is used
 
 ## Project Set up
 
