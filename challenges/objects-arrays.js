@@ -1,4 +1,4 @@
-// ==== Objects ====
+// ==== objects-arrays ====
 
 /* 
   Given the following information about dinosaurs, create 3 objects: 

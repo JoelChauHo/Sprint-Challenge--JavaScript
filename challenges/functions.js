@@ -6,6 +6,20 @@
   * The last parameter accepts a callback
   * The consume function should return the invocation of cb, passing a and b into cb as arguments
 */
+function add(a, b , callback){ 
+  console.log(`The sum of ${a} and ${b} is ${a+b}. \n` ); 
+  callback(); 
+  } 
+    
+  // disp() function is called just 
+  // after the ending of add() function  
+  function disp(){ 
+  console.log('This must be printed after addition'); 
+  } 
+    
+  // Calling add() function 
+  add(5,6,disp);     
+    
 
 
 /* Step 2: Create several functions to callback with consume();
