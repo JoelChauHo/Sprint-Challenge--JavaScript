@@ -15,9 +15,9 @@ const CuboidMaker = function(length, width, height){
 CuboidMaker.prototype.volume = function(){
     return this.length*this.width*this.height;
   }
-CuboidMaker.prototype.surface = function(){
-  return 2*( this.length*this.width +this.height* this.width + this.height* this.length);
-}
+  CuboidMaker.prototype.surfaceArea = function(){
+    return (2*( this.length*this.width +this.height* this.width + this.height* this.length));
+ };
 
 /* == Step 2: Volume Method ==
   Create a method using CuboidMaker's prototype that returns the volume of a given 
